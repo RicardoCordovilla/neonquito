@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400');
+
+:root{
+    --color-primario: rgb(0,0,40);
+    --color-secundario: rgb(204,255,2);
+    --color-tercero: rgb(255,255,255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    color: var(--color-tercero);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.fondo{
+    position: fixed;
+    background: url('oficinas_neon.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.fondo_color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 40, 0.4 );
+    backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.logoBx img{
+    position: relative;
+    height: 40vh;
+    margin-top: 3rem;
+}
+
+.logo{
+    /* animation: 0.8s logoShadow infinite alternate; */
+    filter: drop-shadow(0 0 2px var(--color-tercero))
+    drop-shadow(0 0 2px var(--color-secundario))
+    drop-shadow(0 0 4px var(--color-primario));  
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+h1{
+    font-size:2.6rem;
+    width: 90vw;
+}
+
+p{
+    letter-spacing: 0.1rem;
+    color: rgba(240,240,255,0.9);
+    font-size: 1.3rem;
+    width: 70vw;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    filter: drop-shadow(0 0 5px rgb(249, 250, 255));
+}
+
+.fa-brands{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-brands:hover{
+    filter: drop-shadow(0 0 5px var(--color-secundario));
+    color: var(--color-primario);
+    
+}
+
+
+.wts{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.fa-whatsapp{
+    font-size: 2rem;
+    background-color: #25D366;
+    padding: 1.3rem 1.4rem;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0px 16px 2px var(--color-secundario);   
+    border: 1px solid rgba(255,255,255,0.4);
+
+}
